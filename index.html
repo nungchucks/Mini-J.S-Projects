@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body style="background-color: #2b2d2b">
+    <h1 id="header" style="color: white">
+        Library
+    </h1>
+
+    <button class="addBookButton" type="button">+ Add Book</button>
+
+    <div class="addBookContainer" id="addBookContainer" style="visibility: hidden">
+        <form class="active">
+            <div class="addHeader">
+                New Book:
+            </div>
+
+            <div class="title">
+                <label for="addTitle"></label>
+                <input type="text" id="addTitle" name="addTitle" placeholder="Title">
+            </div>
+
+            <div class="author">
+                <label for="addAuthor"></label>
+                <input type="text" id="addAuthor" name="addAuthor" placeholder="Author">
+            </div>
+
+            <div class="pages">
+                <label for="addPages"></label>
+                <input type="text" id="addPages" name="addPages" placeholder="Pages">        </div>
+
+            <div class="read">
+                <input type="checkbox" id="readIt" name="readIt" value="read">
+                <label for="readIt" style="float:left">Have you read it?</label>
+
+            </div>
+
+            <button class="submitButton" type="button">Submit</button>
+        </form>
+
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
