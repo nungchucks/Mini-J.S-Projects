@@ -24,15 +24,14 @@ addButton.addEventListener('click', () => {
     if (read.checked) {
         read.checked = false; 
     }
-    author.placeholder="your message";
+    author.value = null; 
+    title.value = null; 
+    pages.value = null; 
 
 })
 
 submitButton.addEventListener('click', () => {
     addContainer.style.visibility = 'hidden'
-    author.value = ' '
-    pages.value = ' '
-    title.value = ' '
-
+    console.log(author.value); 
 })
 
