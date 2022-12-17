@@ -20,20 +20,22 @@ button {
     height: 40px;
     background-color: #5dd38a;
     margin-left: 85px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 input{
     font-size: 25px;
     margin-left: 10px;
+    /* margin: -1px 15px; */
     margin-bottom:10px;
     margin-top: 10px;
 }
 
 #readIt{
     padding-left: 100px;
-    padding-bottom: 10px;
     height: 20px;
     width: 20px;
+    margin: 0px 20px 0px;
+
 }
 
 .addBookContainer{
@@ -78,5 +80,12 @@ input{
     height: 20%;
     width: 100%;
     padding-left: 10px;
+    padding-top: 15px;
+    color: black;
 }
 
+.box{
+    width: 1000px; 
+    height: 1000px; 
+    background-color: rebeccapurple;
+}
