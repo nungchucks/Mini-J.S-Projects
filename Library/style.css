@@ -95,20 +95,34 @@ input{
 }
 
 .booksContainer{
-    margin-left:50px;
+    margin-left:6%;
+    margin-right:10%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
-    column-gap: 20px;
+    column-gap: 60px;
     row-gap: 30px;
     position: relative;
     z-index: -1;
 }
 .book{
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center; 
     height: 200px; 
     width: 300px; 
+    font-size: 20px; 
+    text-align: center;
     background-color: rgb(110, 110, 110);
     border-radius: 25px;
     margin-left: 5%;
     margin-right: 5%;
-    padding-left: 5px;
 }
+.book {
+    padding: 5px 10px -50px 20px;
+  }
+  
+  .book h2,
+  .book p,
+  .book button {
+    margin: 15px;
+  }
