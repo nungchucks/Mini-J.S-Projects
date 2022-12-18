@@ -31,7 +31,7 @@ const addBook = () => {
     // Add the book object to the myLibrary array
     myLibrary.push(book);
   }
-  
+
   const displayBooks = () => {
     console.log("Displaying books!");
     // Clear the booksContainer element
@@ -64,23 +64,6 @@ const addBook = () => {
       booksContainer.appendChild(bookCard);
     }
   }
-
-  const readButtons = document.querySelectorAll('.book .read-button');
-
-  readButtons.forEach(button => {
-    button.addEventListener('click', event => {
-      // Get the book element that the button belongs to
-      const bookElement = event.target.closest('.book');
-      // Get the index of the book in the myLibrary array
-      const bookIndex = myLibrary.findIndex(book => book.title === bookElement.querySelector('h2').textContent);
-      // Toggle the read status of the book
-      myLibrary[bookIndex].read = !myLibrary[bookIndex].read;
-      // Update the book card's display
-      displayBooks();
-    });
-  });
-  
-
 
 addButton.addEventListener('click', () => {
     addContainer.style.visibility = 'visible'
