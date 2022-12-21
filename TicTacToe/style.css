@@ -19,3 +19,11 @@
 .cell:hover{
     background-color: rgb(100, 100, 100) !important;
 }
+.restartButton{
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+
+}

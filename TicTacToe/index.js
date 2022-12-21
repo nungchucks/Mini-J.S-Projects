@@ -9,6 +9,7 @@ const winningCombinations = [
     [0, 4, 8],
     [2, 4, 6]
   ];
+const restartButton = document.querySelector('.restartButton');
 let movesMade = 0; 
 
 let playerFactory = (name, character) => {
@@ -47,10 +48,20 @@ const checkWinner = () => {
     alert(`${winner} has won!`);
   } else if (movesMade === 9) {
     alert('The game is a tie!');
+    restartGame();
   }
 };
 
+const restartGame = () => {
+    cell.forEach(cell => {
+        cell.textContent = '';
+    })
+    movesMade = 0;
+    currentPlayer = playerOne; 
+}
 
-
+restartButton.addEventListener('click', function(e) {
+    restartGame();
+})
 
 playGame();
