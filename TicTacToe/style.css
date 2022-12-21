@@ -11,6 +11,10 @@
     width: 150px;
     border: 1px solid black;
     background-color: rgb(25, 25, 25);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 100px;
 }
 .cell:hover{
     background-color: rgb(100, 100, 100) !important;
