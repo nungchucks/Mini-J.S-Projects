@@ -16,7 +16,7 @@ button {
 }
 .addBookButton{
     margin-top: 20px;
-    margin-left: 43.5%;
+    margin-left: 45.75%;
     margin-right: 50%;
     margin-bottom: 3%;
     width: 120px;
@@ -56,12 +56,13 @@ input{
     padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 7.5%;
+    margin-top: 4.5%;
     height: 350px;
     width: 300px;
     font-size:30px;
     background-color: #b1b3b1;
-    transition: visibility 0s, opacity 1s ease-in-out;
+    transition: visibility 0s, opacity 2s ease-in-out;
+    
 }
 
 #addTitle{
@@ -95,8 +96,6 @@ input{
 }
 
 .booksContainer{
-    /* margin-left:4%;
-    margin-right:4%;  */
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, 300px);
@@ -115,7 +114,6 @@ input{
     text-align: center;
     background-color: rgb(110, 110, 110);
     border-radius: 25px;
-    /* margin-left: 3%; */
 }
 .book {
     padding: 5px 10px -50px 20px;
