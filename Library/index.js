@@ -18,22 +18,24 @@ const toggleAddBookContainer = () => {
     });
 }
     
+class Book {
+  constructor(author, title, pages, read) {
+    this.author = author;
+    this.title = title;
+    this.pages = pages;
+    this.read = read;
+  }
+}
 
 const addBook = () => {
-    // Create a new book object
-    const book = {
-      author: author.value,
-      title: title.value,
-      pages: pages.value,
-      read: read.checked
-    };
-  
-    // Add the book object to the myLibrary array
-    myLibrary.push(book);
-  }
+  // Create a new book object
+  const newBook = new Book(author.value, title.value, pages.value, read.checked);
+
+  // Add the book object to the myLibrary array
+  myLibrary.push(newBook);
+}
 
   const displayBooks = () => {
-    console.log("Displaying books!");
     // Clear the booksContainer element
     booksContainer.innerHTML = '';
   
